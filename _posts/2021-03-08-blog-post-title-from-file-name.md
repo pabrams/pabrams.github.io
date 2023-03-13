@@ -33,7 +33,7 @@ ForEach ($thing in $things) {
 
 #### Javascript
 
-```JavaScrip9t
+```JavaScript
 
 function isVowel(x) {
     x = x.toLowerCase();

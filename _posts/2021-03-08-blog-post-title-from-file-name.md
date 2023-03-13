@@ -1,10 +1,10 @@
-## Blog Post Title From First Header
+## My first blog post
 
-My first blog post. It has some code in it.
+It's about time I started a blog. I did have one a long time ago, but my employer forced me to take it down because I guess I said something unflattering. 
 
 ---
 
-### This is a header
+### Here is some code with syntax highlighting
 
 #### Some SQL Code
 
@@ -15,7 +15,7 @@ FROM dbo.SomeTable s
     CROSS JOIN dbo.OtherTable o;
 ```
 
-#### Some PowerShell Code
+#### PowerShell
 
 ```powershell
 Write-Host "This is a powershell Code block";

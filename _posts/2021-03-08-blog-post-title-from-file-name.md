@@ -10,7 +10,7 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 ### This is a header
 
-#### Some T-SQL Code
+#### Some SQL Code
 
 ```tsql
 SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
@@ -28,5 +28,35 @@ Write-Host "This is a powershell Code block";
 
 ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
+}
+```
+
+#### Javascript
+
+```JavaScrip9t
+
+function isVowel(x) {
+    x = x.toLowerCase();
+    return (
+        x == "a" || 
+        x == "e" || 
+        x == "i" || 
+        x == "o" || 
+        x == "u" 
+    );
+}
+
+function sumOfSentence(str){
+    let sum = 0;
+    for (let i=0; i<str.length; i++){
+        char = str.charAt(i);
+        if (isVowel(char)){
+            // for vowels, add the inverse of their ascii values
+            sum += (0 - (char.charCodeAt(0)))
+        } else {
+            sum += char.charCodeAt(0);
+        }
+    }
+    return sum;
 }
 ```

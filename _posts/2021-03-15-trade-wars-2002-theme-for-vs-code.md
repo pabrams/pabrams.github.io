@@ -6,4 +6,4 @@ Trade Wars managed to use those colors in very appealing combinations, often by 
 
 Here are 14 of the colors; I feel like I'm forgetting a couple, but I can't think which they are.
 
-![Fourteen primary and secondary colours](./primary%20and%20secondary%20colors.png "Primary and Secondary Colours")
+![Fourteen primary and secondary colours]({{site.baseurl}}/image/primary%20and%20secondary%20colors.png "Primary and Secondary Colours")

@@ -7,3 +7,7 @@ Trade Wars managed to use those colors in very appealing combinations, often by 
 Here are 14 of the colors; I feel like I'm forgetting a couple, but I can't think which they are.
 
 ![Fourteen primary and secondary colours]({{site.baseurl}}/img/primary%20and%20secondary%20colors.png "Primary and Secondary Colours")
+
+Here's a shot of my VS Code instance, with my Trade Wars 2002 theme applied, as I write this blog:
+
+![Editing this blog]({{site.baseurl}}/img/Screenshot_20230324_020727.png "My Trade Wars 2002 VS Code theme in action")

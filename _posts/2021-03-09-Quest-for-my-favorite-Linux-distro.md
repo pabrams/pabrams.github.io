@@ -2,14 +2,14 @@ It took me a while to realize that the main difference between most linux distri
 
 I've used Linux before, on my home PC, but always dual booting. This is the first time I've removed Windows completely. In the past, I've tried RedHat, Fedora, Mint, Suse, and Slackware.
 This time around, I tried the following distros, in the order shown:
-MX Linux
-PoP!_OS
-Kali
-Solus
-Manjaro
-Fedora
-Redhat
-Endeavour
+ - MX Linux
+ - PoP!_OS
+ - Kali
+ - Solus
+ - Manjaro
+ - Fedora
+ - Redhat
+ - Endeavour
 
 I hardly tried MX at all, really. It seemed boring and I switched almost immediately to Pop.
 I really enjoyed Pop for a while, and probably would have stayed on it if I hadn't run into serious issues which forced me to re-install several times. 

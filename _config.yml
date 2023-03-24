@@ -14,7 +14,7 @@ stackoverflow_profile: "https://stackoverflow.com/users/1139696/pabrams"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
-
+remote_theme: pages-themes/hacker@v0.2.0
 rss: rss
 
 kramdown:
@@ -24,6 +24,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 titles_from_headings:
   strip_title: true

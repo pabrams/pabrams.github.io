@@ -30,6 +30,8 @@ google_analytics: UA-NNNNNNNN-N
 titles_from_headings:
   strip_title: true
   collections: true
+  
+show_excerpts: true
 
 defaults:
   - scope:

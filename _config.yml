@@ -36,6 +36,6 @@ show_excerpts: true
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
       tags: Other

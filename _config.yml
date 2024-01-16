@@ -13,7 +13,7 @@ stackoverflow_profile: "https://stackoverflow.com/users/1139696/pabrams"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+remote_theme: jekyll/minima
 rss: rss
 
 kramdown:

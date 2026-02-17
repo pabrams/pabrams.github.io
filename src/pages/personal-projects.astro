@@ -1,0 +1,75 @@
+---
+import Header from '../components/Header.astro';
+import Project from '../components/Project.astro';
+import Sidebar from '../components/Sidebar.astro';
+const projects = [
+{
+    title: "Chess Attack Visualization",
+    desc: [
+      "Uses my [fork of chess.js](https://www.npmjs.com/package/@pabrams/chess.js/v/1.5.4)",
+      "to visualize white and black attackers of any square. When solving mate-in-1 problems,",
+      "the app will automatically show a visualization of exactly how the enemy king is restricted.",
+      "Over time, this helps burn checkmating patterns into the brain, solidifying neural pathways ",
+      "so that you will never miss the pattern during competitive play.",
+      "The app is published for free use at [pabrams.github.io/chess-attack-visualization](https://pabrams.github.io/chess-attack-visualization)",
+      "Source code is available at [github/pabrams/chess.js](https://github.com/pabrams/chess.js)"
+    ],
+    tech: ["React", "Node.js", "TypeScript", "JavaScript", "Git"]
+  },
+  {
+    title: "Chess.js",
+    desc: [
+      "My [fork of chess.js](https://www.npmjs.com/package/@pabrams/chess.js/v/1.5.4)",
+      "which adds features such as x-ray attack, taking piece batteries into account when",
+      "determining the number of attackers of any given square on the chess board."
+    ],
+    tech: ["Node.js", "TypeScript", "JavaScript", "jest", "Git"]
+  },
+  {
+    title: "A Hierarchical Genetic Algorithm for the Traveling Salesman Problem",
+    desc: [
+      "This was my Honours Project for Carleton University.",
+      "Developed appointment and billing systems",
+      "Resolved live production bugs and server issues"
+    ],
+    tech: ["Java", "Artificial Intelligence", "Genetic Algorithms"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Personal Projects | Paul Abrams" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="personal-projects" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Personal Projects</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

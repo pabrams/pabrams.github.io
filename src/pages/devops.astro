@@ -2,39 +2,17 @@
 import Header from '../components/Header.astro';
 import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
-const projects = [
- {
-    title: "Chess Attack Visualization",
-    desc: [
-      "Uses my [fork of chess.js](https://www.npmjs.com/package/@pabrams/chess.js/v/1.5.4)",
-      "to visualize white and black attackers of any square. When solving mate-in-1 problems,",
-      "the app will automatically show a visualization of exactly how the enemy king is restricted.",
-      "Over time, this helps burn checkmating patterns into the brain, solidifying neural pathways ",
-      "so that you will never miss the pattern during competitive play.",
-      "The app is published for free use at [pabrams.github.io/chess-attack-visualization](https://pabrams.github.io/chess-attack-visualization)",
-      "Source code is available at [github/pabrams/chess.js](https://github.com/pabrams/chess.js)"
-    ],
-    tech: ["React", "Node.js", "TypeScript", "JavaScript", "Git"]
-  },
-  {
-    title: "Chess.js",
-    desc: [
-      "My [fork of chess.js](https://www.npmjs.com/package/@pabrams/chess.js/v/1.5.4)",
-      "which adds features such as x-ray attack, taking piece batteries into account when",
-      "determining the number of attackers of any given square on the chess board."
-    ],
-    tech: ["Node.js", "TypeScript", "JavaScript", "jest", "Git"]
-  },
-  {
-    title: "A Hierarchical Genetic Algorithm for the Traveling Salesman Problem",
-    desc: [
-      "This was my Honours Project for Carleton University.",
-      "Developed appointment and billing systems",
-      "Resolved live production bugs and server issues"
-    ],
-    tech: ["Java", "Artificial Intelligence", "Genetic Algorithms"]
-  }
-];
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+const projectPromises = projects.map(async (project) => {
+    const { Content } = await project.render();
+    return {
+        ...project,
+        Content,
+    };
+});
+const renderedProjects = await Promise.all(projectPromises);
 ---
 
 <!DOCTYPE html>
@@ -56,11 +34,11 @@ const projects = [
             <h1>DevOps</h1>
             <section class="items-container">
                 <div class="resouce-items">
-                    {projects.map(project => (
+                    {renderedProjects.map(({ data, Content }) => (
                       <Project 
-                        title={project.title} 
-                        desc={project.desc}
-                        tech={project.tech}
+                        title={data.title} 
+                        desc={Content}
+                        tech={data.tech}
                       />
                     ))}
                   </div>

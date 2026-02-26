@@ -1,14 +1,11 @@
 ---
-import { marked } from "marked";
-const { title, desc, tech } = Astro.props;
+const { title, desc: Desc, tech } = Astro.props;
 ---
 
 <div class="single-item">
   <h3>{title}</h3>
   <div class="project-desc project-desc-list w-richtext">
-    <ul role="list">
-      {desc.map(item => <li set:html={marked.parse(item)} />)}
-    </ul>
+    <Desc />
   </div>
   <div class="mini-label-white">Technologies &amp; tools</div>
   <div class="chips-container">

@@ -1,0 +1,168 @@
+---
+import Header from '../components/Header.astro';
+import Sidebar from "../components/Sidebar.astro";
+---
+
+<!DOCTYPE html>
+<html>
+  <Header title="CV | Paul Abrams" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="cv" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container cv-content">
+            <div class="cv-header">
+              <h1>Paul Abrams</h1>
+              <p class="lead">Full-Stack Software Developer | Web Applications, Cloud, Automation | Professional Scrum Master</p>
+              <div class="cv-contact">
+                <span>Toronto, Ontario</span>
+                <span class="cv-sep">|</span>
+                <a href="mailto:j.paul.abrams@protonmail.com">j.paul.abrams@protonmail.com</a>
+                <span class="cv-sep">|</span>
+                <a href="https://linkedin.com/in/paulabrams200" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <span class="cv-sep">|</span>
+                <a href="https://github.com/pabrams" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+              <div class="cv-download">
+                <a href="/assets/CV-Paul-Abrams-2026-03-12.pdf" class="button w-button" target="_blank">Download PDF</a>
+              </div>
+            </div>
+
+            <section class="cv-section">
+              <h3>Professional Summary</h3>
+              <p>Over 15 years of progressive experience as a full-stack developer, with very strong DevOps and Cloud expertise. Proven track record of modernizing enterprise infrastructure, delivering working software, mitigating technical debt, and designing robust CI/CD pipelines. Highly adaptable technical leader with consistent success driving cross-functional Agile/Scrum teams. Proficient with a broad diversity of full-stack technologies, but most notably C#.NET, JavaScript/TypeScript, React, and SQL Server.</p>
+            </section>
+
+            <section class="cv-section">
+              <h3>Professional Experience</h3>
+
+              <div class="cv-job">
+                <h4>Technical Lead, Full-Stack Development</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Abrams Software</span>
+                  <span class="cv-location">Kingston, Ontario - Remote</span>
+                  <span class="cv-dates">August 2025 - Present</span>
+                </div>
+                <ul>
+                  <li>Train Large Language Models (LLM) in all aspects of development for large clients such as DataAnnotation.tech; evaluate code generation by applying expert code review combined with comprehensive unit testing. (JavaScript, TypeScript, .NET (C#), Python, React, SQL, REST, Jest, Vitest, Node.js, Next.js)</li>
+                  <li>Develop specialized chess training software integrated with Lichess.org API to help visualize board control and checkmating patterns. (React.js, TypeScript, OAuth2, REST)</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Lead DevOps Engineer, Infrastructure and Cloud Enablement</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Employment and Social Development Canada (BDM Project)</span>
+                  <span class="cv-location">Gatineau, Quebec</span>
+                  <span class="cv-dates">December 2021 - July 2025</span>
+                </div>
+                <ul>
+                  <li>Enhanced and maintained microservices-architecture application for onboarding personnel; integrated with enterprise IAM in Azure AD and Azure DevOps mirrored in Entra (C# .NET, Blazor, HTML/CSS, Azure Logic Apps, Azure SQL, APIM, GraphQL).</li>
+                  <li>Implemented CI/CD pipelines in ADO for build, test, and cloud deployments. Supported and advised other teams on pipeline implementation and management. (PowerShell, YAML).</li>
+                  <li>Developed custom ADO web extension applications (TypeScript, React) -- analytics widget for build/deploy metrics; Team Calendar leveraging sprint/iteration data.</li>
+                  <li>Administered Azure DevOps Services for all teams in the BDM project; advised on Agile process templates, branching strategies, PR workflows, and WCAG accessibility compliance.</li>
+                  <li>Implemented ITSG-33 (NIST-based) security controls for SA&A submissions against a PBMM security profile.</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Development Lead, Testing Services</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Employment and Social Development Canada</span>
+                  <span class="cv-location">Gatineau, Quebec</span>
+                  <span class="cv-dates">August 2019 - November 2021</span>
+                </div>
+                <ul>
+                  <li>Engineered ADO pipelines for automated testing, provisioning agent machines to execute parallel Selenium UI tests and seamlessly integrating logged test results back into ADO.</li>
+                  <li>Co-architected an internal web application enabling QA staff to author structured test scenarios via a web UI; designed the database schema and developed the C# code bridging the application with ADO.</li>
+                  <li>Championed the departmental transition from LoadRunner to JMeter, significantly reducing licensing costs.</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Team Lead / Technical Lead</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Department of Immigration, Refugees, and Citizenship Canada</span>
+                  <span class="cv-location">Ottawa, Ontario</span>
+                  <span class="cv-dates">April 2018 - August 2019</span>
+                </div>
+                <ul>
+                  <li>Directed daily stand-ups and poker planning estimation sessions. Pioneered capacity planning and forecasting methodologies using Azure DevOps Server (TFS).</li>
+                  <li>Mentored full-stack developers in SSRS, T-SQL, C#.NET, and automated testing.</li>
+                  <li>Managed departmental TFS instances and maintained heavily customized Agile, Scrum, and CMMI process templates. Built custom web extensions using React.js, Node.js, TypeScript/JavaScript, and C#.</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Development Lead</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Department of Justice Canada</span>
+                  <span class="cv-location">Ottawa, Ontario</span>
+                  <span class="cv-dates">January 2016 - March 2018</span>
+                </div>
+                <ul>
+                  <li>Led enhancement and maintenance of the departmental case management system -- a high availability web application serving thousands of accounts across the country (ASP.Net, C#, SQL, JavaScript, HTML, CSS).</li>
+                  <li>Mentored junior developers and integrated code review processes with TFS work items.</li>
+                  <li>Engineered MS Dynamics CRM plug-ins, custom actions, and processes; migrated legacy SQL stored procedures to the new CRM environment using C# and LINQ.</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Senior DevOps & ALM Engineer</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Department of Citizenship and Immigration Canada</span>
+                  <span class="cv-location">Ottawa, Ontario</span>
+                  <span class="cv-dates">April 2014 - December 2015</span>
+                </div>
+                <ul>
+                  <li>Transitioned the department from manual, UI-based release procedures to fully automated CI/CD workflows.</li>
+                  <li>Slashed technical debt by replacing over-engineered legacy C# desktop applications with lightweight PowerShell scripts using the TFS Client APIs.</li>
+                  <li>Guided development teams in migrating from legacy XAML builds to modern, scriptable build definitions.</li>
+                </ul>
+              </div>
+
+              <div class="cv-job">
+                <h4>Full-Stack .NET Developer / SDET</h4>
+                <div class="cv-meta">
+                  <span class="cv-employer">Department of Justice Canada</span>
+                  <span class="cv-location">Ottawa, Ontario</span>
+                  <span class="cv-dates">October 2006 - March 2014</span>
+                </div>
+                <ul>
+                  <li>Core contributor to the flagship Legal Case Management System used by 5,000+ lawyers and agents across Canada.</li>
+                  <li>Modernized the CMS with a widget-based interface using Knockout.js and ASP.NET, reducing server load.</li>
+                  <li>Diagnosed a COM Interop memory leak across 11 servers and implemented automated health monitoring.</li>
+                  <li>Architected a custom Java-based test framework that reduced release validation time by 98% (80 person-weeks to 5 person-days), saving an estimated $160,000 per release cycle.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="cv-section">
+              <h3>Education & Certifications</h3>
+              <div class="cv-education">
+                <div class="cv-edu-item">
+                  <h4>Bachelor of Computer Science</h4>
+                  <p>Carleton University &mdash; September 1999 - May 2003</p>
+                  <p>Honours Project: <a href="https://pabrams.github.io/hga4tsp">A Hierarchical Genetic Algorithm for the Traveling Salesman Problem</a></p>
+                  <img src="/assets/degree800x600.jpg" alt="Bachelor of Computer Science degree" class="cv-degree-image" loading="lazy" />
+                </div>
+                <div class="cv-edu-item">
+                  <h4>Professional Scrum Master I (PSM I)</h4>
+                  <p>Scrum.org &mdash; September 2025</p>
+                  <p><a href="https://scrum.org/certificates/1250586" target="_blank" rel="noopener noreferrer">Verify Certification</a> | <a href="/assets/Professional Scrum Master I.pdf" target="_blank">View Certificate</a></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

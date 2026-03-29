@@ -4,7 +4,8 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 import { getCollection } from 'astro:content';
 
-const projects = await getCollection('projects');
+const projects = await getCollection('projects', ({ data }) => data.category === 'software-development');
+projects.sort((a, b) => a.data.order - b.data.order);
 const projectPromises = projects.map(async (project) => {
     const { Content } = await project.render();
     return {
@@ -16,8 +17,7 @@ const renderedProjects = await Promise.all(projectPromises);
 ---
 
 <!DOCTYPE html>
-<html
->
+<html>
   <Header title="Software Development | Paul Abrams" />
   <body>
     <div class="content">
@@ -32,13 +32,16 @@ const renderedProjects = await Promise.all(projectPromises);
           </div>
           <div class="content-container">
             <h1>Software Development</h1>
+            <p class="lead">Professional experience building enterprise web applications, modernizing legacy systems, and delivering working software across the Government of Canada and private sector.</p>
             <section class="items-container">
                 <div class="resouce-items">
                     {renderedProjects.map(({ data, Content }) => (
-                      <Project 
-                        title={data.title} 
+                      <Project
+                        title={data.title}
                         desc={Content}
                         tech={data.tech}
+                        image={data.image}
+                        url={data.url}
                       />
                     ))}
                   </div>
@@ -47,7 +50,5 @@ const renderedProjects = await Promise.all(projectPromises);
         </div>
       </nav>
     </div>
-
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   </body>
 </html>

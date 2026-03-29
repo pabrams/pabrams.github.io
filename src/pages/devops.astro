@@ -4,7 +4,8 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 import { getCollection } from 'astro:content';
 
-const projects = await getCollection('projects');
+const projects = await getCollection('projects', ({ data }) => data.category === 'devops');
+projects.sort((a, b) => a.data.order - b.data.order);
 const projectPromises = projects.map(async (project) => {
     const { Content } = await project.render();
     return {
@@ -16,9 +17,8 @@ const renderedProjects = await Promise.all(projectPromises);
 ---
 
 <!DOCTYPE html>
-<html
->
-  <Header title="DevOps | Paul Abrams" />
+<html>
+  <Header title="DevOps & Cloud | Paul Abrams" />
   <body>
     <div class="content">
         <Sidebar selectedItem="devops" />
@@ -31,14 +31,17 @@ const renderedProjects = await Promise.all(projectPromises);
             >
           </div>
           <div class="content-container">
-            <h1>DevOps</h1>
+            <h1>DevOps &amp; Cloud</h1>
+            <p class="lead">Infrastructure automation, CI/CD pipeline design, and cloud enablement across Azure DevOps, GitHub Actions, and enterprise environments.</p>
             <section class="items-container">
                 <div class="resouce-items">
                     {renderedProjects.map(({ data, Content }) => (
-                      <Project 
-                        title={data.title} 
+                      <Project
+                        title={data.title}
                         desc={Content}
                         tech={data.tech}
+                        image={data.image}
+                        url={data.url}
                       />
                     ))}
                   </div>
@@ -47,7 +50,5 @@ const renderedProjects = await Promise.all(projectPromises);
         </div>
       </nav>
     </div>
-
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   </body>
 </html>

@@ -1,9 +1,14 @@
 ---
-const { title, desc: Desc, tech } = Astro.props;
+const { title, desc: Desc, tech, image, url } = Astro.props;
 ---
 
 <div class="single-item">
-  <h3>{title}</h3>
+  <h3>{url ? <a href={url} target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none; border-bottom: 1px solid #555;">{title}</a> : title}</h3>
+  {image && (
+    <a href={url || "#"} target="_blank" rel="noopener noreferrer">
+      <img src={image} alt={title} class="project-image" loading="lazy" />
+    </a>
+  )}
   <div class="project-desc project-desc-list w-richtext">
     <Desc />
   </div>

@@ -557,6 +557,127 @@ p {
   height: 82px;
 }
 
+.project-image {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  border: 1px solid #353535;
+  margin: 12px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link-text-only {
+  padding-left: 36px;
+}
+
+/* CV page styles */
+.cv-content a {
+  color: #6ab0f3;
+  text-decoration: none;
+}
+
+.cv-content a:hover {
+  text-decoration: underline;
+}
+
+.cv-header {
+  margin-bottom: 16px;
+}
+
+.cv-contact {
+  color: #a8a8a8;
+  font-size: 14px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.cv-contact a {
+  color: #6ab0f3;
+  text-decoration: none;
+}
+
+.cv-sep {
+  color: #555;
+}
+
+.cv-download {
+  margin-top: 16px;
+}
+
+.cv-section {
+  margin-bottom: 8px;
+}
+
+.cv-section h3 {
+  border-bottom: 1px solid #353535;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+.cv-job {
+  margin-bottom: 32px;
+}
+
+.cv-job h4 {
+  margin-bottom: 4px;
+}
+
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #a8a8a8;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-family: IBM Plex Mono, monospace;
+}
+
+.cv-employer {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.cv-meta span:not(:last-child)::after {
+  content: " | ";
+  color: #555;
+  margin-left: 8px;
+}
+
+.cv-job ul {
+  color: #a8a8a8;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.cv-job li {
+  margin-bottom: 8px;
+}
+
+.cv-education p {
+  margin-bottom: 8px;
+}
+
+.cv-edu-item {
+  margin-bottom: 32px;
+}
+
+.cv-degree-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #353535;
+  margin-top: 12px;
+}
+
 @media screen and (max-width: 991px) {
   .content {
     flex-direction: column;

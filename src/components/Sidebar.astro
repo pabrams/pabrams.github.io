@@ -87,6 +87,28 @@ const { selectedItem } = Astro.props;
         />
         <div>Personal projects</div>
       </a>
+      <a
+        href="/cv"
+        class={`nav-link-container w-inline-block ${
+          selectedItem === 'cv' ? 'w--current' : ''
+        }`}
+      >
+        <img
+          src="/assets/browser.svg"
+          loading="eager"
+          alt=""
+          class="nav-link-image"
+        />
+        <div>CV / Resume</div>
+      </a>
+      <a
+        href="https://linkedin.com/in/paulabrams200"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-link-container w-inline-block"
+      >
+        <div class="nav-link-text-only">LinkedIn</div>
+      </a>
     </nav>
 
     <div

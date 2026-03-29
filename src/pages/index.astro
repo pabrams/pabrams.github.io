@@ -15,8 +15,13 @@ import Sidebar from "../components/Sidebar.astro";
           <main class="fold-content-container">
             <div class="fold-content">
               <h1>I'm Paul.<br/>I develop, build, and deploy enterprise software.</h1>
+              <p class="lead">Full-stack developer with 15+ years of experience across the Government of Canada and private sector. Specializing in .NET, React, TypeScript, and cloud infrastructure.</p>
             </div>
-            <a href="mailto:j.paul.abrams@protonmail.com	" class="button w-button">Contact</a>
+            <div class="hero-buttons">
+              <a href="mailto:j.paul.abrams@protonmail.com" class="button w-button">Contact</a>
+              <a href="/cv" class="button w-button">View CV</a>
+              <a href="https://linkedin.com/in/paulabrams200" target="_blank" rel="noopener noreferrer" class="button w-button">LinkedIn</a>
+            </div>
           </main>
           <div class="projects-section">
             <!-- Software Development -->
@@ -38,10 +43,9 @@ import Sidebar from "../components/Sidebar.astro";
                     <div class="single-chip small-chip">C#</div>
                     <div class="single-chip small-chip">.NET</div>
                     <div class="single-chip small-chip">SQL</div>
-                    <div class="single-chip small-chip">ASP .NET</div>
-                    <div class="single-chip small-chip">ADODB</div>
+                    <div class="single-chip small-chip">ASP.NET</div>
+                    <div class="single-chip small-chip">Blazor</div>
                     <div class="single-chip small-chip">Java</div>
-
                   </div>
                 </div>
               </div>
@@ -58,9 +62,8 @@ import Sidebar from "../components/Sidebar.astro";
                 <div class="tech-tools-container">
                   <div class="mini-label-white gray-color">Technologies &amp; tools</div>
                   <div class="chips-container chips-container-small-width">
-                    <div class="single-chip small-chip">Azure DevOps Services (ADO)</div>
-                    <div class="single-chip small-chip">ADO Pipelines (Build/Release)</div>
-                    <div class="single-chip small-chip">CI/CD</div>
+                    <div class="single-chip small-chip">Azure DevOps</div>
+                    <div class="single-chip small-chip">CI/CD Pipelines</div>
                     <div class="single-chip small-chip">PowerShell</div>
                     <div class="single-chip small-chip">Git</div>
                     <div class="single-chip small-chip">Terraform</div>
@@ -68,9 +71,29 @@ import Sidebar from "../components/Sidebar.astro";
                     <div class="single-chip small-chip">AWS</div>
                     <div class="single-chip small-chip">Docker</div>
                     <div class="single-chip small-chip">Kubernetes</div>
-                    <div class="single-chip small-chip">GitHub CI/CD</div>
+                    <div class="single-chip small-chip">GitHub Actions</div>
                     <div class="single-chip small-chip">Linux</div>
                     <div class="single-chip small-chip">Bash</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Personal Projects -->
+            <a href="/personal-projects" class="projects-container">
+              <div class="single-projects-category">
+                <div class="projects-category-image-container">
+                  <img src="./assets/favorite.svg" loading="lazy" alt="" class="projects-category-image" />
+                </div>
+              </div>
+              <div class="single-projects-content">
+                <h4>Personal Projects</h4>
+                <div class="tech-tools-container">
+                  <div class="mini-label-white gray-color">Highlights</div>
+                  <div class="chips-container chips-container-small-width">
+                    <div class="single-chip small-chip">Chess Training App</div>
+                    <div class="single-chip small-chip">Open Source</div>
+                    <div class="single-chip small-chip">AI / Genetic Algorithms</div>
+                    <div class="single-chip small-chip">Blog</div>
                   </div>
                 </div>
               </div>
@@ -79,7 +102,5 @@ import Sidebar from "../components/Sidebar.astro";
         </div>
       </nav>
     </div>
-
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   </body>
 </html>

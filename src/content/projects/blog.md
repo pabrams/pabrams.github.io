@@ -2,6 +2,7 @@
 title: "Code Monkey From Space"
 tech: ["Blog", "Writing"]
 category: "personal-projects"
+image: "/assets/codemonkey.png"
 url: "https://codemonkeyfromspace.com"
 order: 4
 ---

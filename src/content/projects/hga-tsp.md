@@ -2,6 +2,7 @@
 title: "A Hierarchical Genetic Algorithm for the Traveling Salesman Problem"
 tech: ["Java", "Artificial Intelligence", "Genetic Algorithms"]
 category: "personal-projects"
+image: "/assets/hga4tsp.png"
 url: "https://pabrams.github.io/hga4tsp"
 order: 3
 ---

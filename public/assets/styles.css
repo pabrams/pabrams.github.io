@@ -54,7 +54,7 @@ html {
 body {
   min-height: 100%;
   color: #333;
-  background-color: #fff;
+  background-color: #00DD00;
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -73,7 +73,7 @@ img {
 }
 
 .w-button {
-  color: #fff;
+  color: #00DD00;
   line-height: inherit;
   cursor: pointer;
   background-color: #3898ec;
@@ -232,14 +232,14 @@ ul {
 
 body {
   color: #333;
-  background-color: #161616;
+  background-color: #000000;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
 h1 {
-  color: #fff;
+  color: #00DD00;
   letter-spacing: -0.5px;
   margin-top: 0;
   margin-bottom: 18px;
@@ -249,7 +249,7 @@ h1 {
 }
 
 h3 {
-  color: #fff;
+  color: #00DD00;
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 32px;
@@ -258,7 +258,7 @@ h3 {
 }
 
 h4 {
-  color: #fff;
+  color: #00DD00;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -267,7 +267,7 @@ h4 {
 }
 
 p {
-  color: #a8a8a8;
+  color: #008800;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 26px;
@@ -283,7 +283,7 @@ p {
   width: 100%;
   height: 100%;
   max-width: 280px;
-  background-color: #1c1c1c;
+  background-color: #000000;
   border-right: 1px solid #353535;
   padding: 32px;
 }
@@ -298,14 +298,14 @@ p {
 }
 
 .label-white {
-  color: #fff;
+  color: #00DD00;
   margin-bottom: 2px;
   font-size: 16px;
   line-height: 24px;
 }
 
 .label-gray {
-  color: #a8a8a8;
+  color: #008800;
   font-size: 14px;
   line-height: 22px;
 }
@@ -326,7 +326,7 @@ p {
 .main {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(28, 28, 28, 0.64), rgba(28, 28, 28, 0.64)), url('./grid-top-right.svg'), linear-gradient(rgba(28, 28, 28, 0.24), rgba(28, 28, 28, 0.24));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.64)), url('./grid-top-right.svg'), linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24));
   background-position: 0 0, 0 0, 0 0;
   background-size: auto, auto 1130px, auto;
   flex-direction: column;
@@ -347,14 +347,14 @@ p {
 
 .lead {
   max-width: 580px;
-  color: #fff;
+  color: #00DD00;
   margin-bottom: 0;
   line-height: 26px;
 }
 
 .button {
-  color: #fff;
-  background-color: #1c1c1c;
+  color: #00DD00;
+  background-color: #000000;
   border: 1px solid #363636;
   border-right-color: #353535;
   border-radius: 8px;
@@ -375,7 +375,7 @@ p {
 }
 
 .mini-label-white {
-  color: #fff;
+  color: #00DD00;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   margin-top: 24px;
@@ -386,7 +386,7 @@ p {
 }
 
 .mini-label-white.gray-color {
-  color: #a8a8a8;
+  color: #008800;
 }
 
 .chips-container {
@@ -403,7 +403,7 @@ p {
 }
 
 .single-chip {
-  color: #fff;
+  color: #00DD00;
   background-color: #353535;
   border-radius: 8px;
   padding: 8px 12px;
@@ -438,7 +438,7 @@ p {
 .nav-link-container {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  color: #a8a8a8;
+  color: #008800;
   text-transform: capitalize;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
@@ -450,7 +450,7 @@ p {
 }
 
 .nav-link-container.w--current {
-  color: #fff;
+  color: #00DD00;
   background-color: #2b2b2b;
   border-color: #353535;
 }
@@ -506,7 +506,7 @@ p {
 }
 
 .back-nav-container {
-  color: #fff;
+  color: #00DD00;
   letter-spacing: 2px;
   text-transform: uppercase;
   align-items: center;
@@ -520,7 +520,7 @@ p {
 }
 
 .back-nav-button {
-  color: #fff;
+  color: #00DD00;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 8px;
   margin-top: -12px;
@@ -537,7 +537,7 @@ p {
 }
 
 .project-desc {
-  color: #a8a8a8;
+  color: #008800;
   line-height: 24px;
 }
 
@@ -606,7 +606,7 @@ p {
 }
 
 .cv-contact {
-  color: #a8a8a8;
+  color: #008800;
   font-size: 14px;
   margin-bottom: 16px;
   display: flex;
@@ -650,14 +650,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  color: #a8a8a8;
+  color: #008800;
   font-size: 13px;
   margin-bottom: 12px;
   font-family: IBM Plex Mono, monospace;
 }
 
 .cv-employer {
-  color: #ccc;
+  color: #008800;
   font-weight: 500;
 }
 
@@ -668,7 +668,7 @@ p {
 }
 
 .cv-job ul {
-  color: #a8a8a8;
+  color: #008800;
   font-size: 14px;
   line-height: 24px;
   padding-left: 20px;
@@ -721,20 +721,20 @@ p {
   }
 
   .nav-link-container {
-    background-color: #1c1c1c;
+    background-color: #000000;
     border-radius: 0;
     padding: 18px 28px 18px 32px;
   }
 
   .nav-link-container:active {
-    color: #fff;
+    color: #00DD00;
     background-color: #2b2b2b;
   }
 
   .navbar-icon {
     width: 32px;
     height: 32px;
-    color: #fff;
+    color: #00DD00;
     font-size: 32px;
   }
 

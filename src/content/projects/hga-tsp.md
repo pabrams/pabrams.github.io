@@ -12,3 +12,5 @@ The algorithm uses a multi-level representation that evolves both the grouping o
 
 - [Project Paper](https://pabrams.github.io/hga4tsp)
 - [Live Demo](https://pabrams.github.io/hga4tsp/src/index.html)
+- [Source Code (Java original)](https://github.com/pabrams/hga4tsp)
+- [JavaScript re-implementation (Ga4Tsp)](https://github.com/codemonkeyfrom-space/Ga4Tsp)

@@ -2,12 +2,12 @@
 import Header from '../components/Header.astro';
 import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 const projects = await getCollection('projects', ({ data }) => data.category === 'devops');
 projects.sort((a, b) => a.data.order - b.data.order);
 const projectPromises = projects.map(async (project) => {
-    const { Content } = await project.render();
+    const { Content } = await render(project);
     return {
         ...project,
         Content,

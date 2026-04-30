@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "cv:build": "typst compile cv/cv-2026-04-30-dev.typ public/assets/CV-Paul-Abrams-2026-04-30-dev.pdf && typst compile cv/cv-2026-04-30-devops.typ public/assets/CV-Paul-Abrams-2026-04-30-devops.pdf",
+    "build": "pnpm cv:build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

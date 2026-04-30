@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# generated CVs (compiled from cv/*.typ; see scripts in package.json)
+public/assets/CV-Paul-Abrams-2026-*.pdf
+
 # generated types
 .astro/
 

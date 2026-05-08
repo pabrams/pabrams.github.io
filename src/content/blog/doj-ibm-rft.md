@@ -5,7 +5,7 @@ pubDate: 2026-05-07
 tags: ["automated testing", "career accomplishments"]
 ---
 
-I’m writing this story down so I can stop retelling it to every recruiter and hiring manager who asks. It happened in the mid-to-late 2000s, when test automation wasn’t the standard business practice it is today. Keep these things in mind, before you judge me for my horn-tooting.
+I’m writing this story down so I can stop retelling it to every recruiter and hiring manager who asks. It happened in the mid-to-late 2000s, when test automation wasn’t the standard business practice it is today.
 
 I had recently joined the development team at the Department of Justice, working on the department's web-based case management application. Before long, I noticed a major bottleneck in our release cycle. Leading up to every release, the entire team \- business analysts, developers and testers alike \- spent two full weeks manually running through comprehensive regression testing scenarios. It was boring, repetitive work, and it struck me as something that could be mostly automatic.
 

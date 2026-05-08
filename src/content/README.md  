@@ -1,0 +1,12 @@
+  To add a post, drop a markdown file into src/content/blog/ with this frontmatter:
+
+  ---
+  title: "Post title"
+  description: "Optional summary"   # shown on the listing page
+  pubDate: 2026-05-07
+  updatedDate: 2026-05-08           # optional
+  draft: false                      # optional; hides post in production builds
+  tags: ["astro", "meta"]           # optional
+  ---
+
+  The filename becomes the URL slug (my-post.md → /blog/my-post/). Subdirectories are supported too.

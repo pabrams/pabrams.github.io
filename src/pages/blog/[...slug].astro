@@ -1,0 +1,88 @@
+---
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const posts = await getCollection('blog', ({ data }) => import.meta.env.PROD ? !data.draft : true);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+};
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<!DOCTYPE html>
+<html>
+  <Header title={`${post.data.title} | Paul Abrams`} />
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="blog" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/blog" class="back-nav-button w-inline-block">
+              <img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back to blog</div>
+            </a>
+          </div>
+          <article class="content-container blog-post">
+            <h1>{post.data.title}</h1>
+            <div class="blog-meta">
+              <time datetime={post.data.pubDate.toISOString()}>{dateFmt.format(post.data.pubDate)}</time>
+              {post.data.updatedDate && (
+                <span> · updated {dateFmt.format(post.data.updatedDate)}</span>
+              )}
+            </div>
+            {post.data.tags.length > 0 && (
+              <div class="chips-container">
+                {post.data.tags.map((tag: string) => <span class="single-chip small-chip">{tag}</span>)}
+              </div>
+            )}
+            <div class="blog-body w-richtext">
+              <Content />
+            </div>
+          </article>
+        </div>
+      </nav>
+    </div>
+    <style>
+      .blog-meta {
+        color: #888;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .blog-body {
+        margin-top: 1.5rem;
+        line-height: 1.65;
+      }
+      .blog-body :global(h2) {
+        margin-top: 2rem;
+      }
+      .blog-body :global(pre) {
+        background: #1a1d24;
+        padding: 1rem;
+        border-radius: 6px;
+        overflow-x: auto;
+      }
+      .blog-body :global(code) {
+        background: #1a1d24;
+        padding: 0.1em 0.3em;
+        border-radius: 3px;
+      }
+      .blog-body :global(pre code) {
+        background: transparent;
+        padding: 0;
+      }
+      .blog-body :global(a) {
+        color: #00DD00;
+      }
+    </style>
+  </body>
+</html>

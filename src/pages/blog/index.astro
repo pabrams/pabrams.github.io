@@ -1,0 +1,91 @@
+---
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => import.meta.env.PROD ? !data.draft : true))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const dateFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<!DOCTYPE html>
+<html>
+  <Header title="Blog | Paul Abrams" />
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="blog" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block">
+              <img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div>
+            </a>
+          </div>
+          <div class="content-container">
+            <h1>Blog</h1>
+            <p class="lead">Notes on software, infrastructure, and side projects.</p>
+            <section class="items-container">
+              <ul class="blog-list">
+                {posts.map((post) => (
+                  <li class="blog-list-item">
+                    <a href={`/blog/${post.id}/`} class="blog-list-link">
+                      <h3>{post.data.title}{post.data.draft && <span class="blog-draft-tag"> (draft)</span>}</h3>
+                      <time datetime={post.data.pubDate.toISOString()}>{dateFmt.format(post.data.pubDate)}</time>
+                      {post.data.description && <p>{post.data.description}</p>}
+                      {post.data.tags.length > 0 && (
+                        <div class="chips-container">
+                          {post.data.tags.map((tag: string) => <span class="single-chip small-chip">{tag}</span>)}
+                        </div>
+                      )}
+                    </a>
+                  </li>
+                ))}
+                {posts.length === 0 && <li>No posts yet.</li>}
+              </ul>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <style>
+      .blog-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .blog-list-item {
+        border-bottom: 1px solid #2a2d36;
+        padding-bottom: 1.5rem;
+      }
+      .blog-list-item:last-child {
+        border-bottom: none;
+      }
+      .blog-list-link {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+      }
+      .blog-list-link h3 {
+        margin: 0 0 0.25rem 0;
+        color: #00DD00;
+      }
+      .blog-list-link time {
+        color: #888;
+        font-size: 0.9rem;
+      }
+      .blog-list-link p {
+        margin: 0.5rem 0;
+      }
+      .blog-draft-tag {
+        color: #888;
+        font-weight: normal;
+        font-size: 0.85em;
+      }
+    </style>
+  </body>
+</html>

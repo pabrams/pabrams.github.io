@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 html {
   -ms-text-size-adjust: 100%;
@@ -54,7 +54,7 @@ html {
 body {
   min-height: 100%;
   color: #333;
-  background-color: #00DD00;
+  background-color: #00DDDD;
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -73,10 +73,10 @@ img {
 }
 
 .w-button {
-  color: #00DD00;
+  color: #00DDDD;
   line-height: inherit;
   cursor: pointer;
-  background-color: #3898ec;
+  background-color: #000000;
   border: 0;
   border-radius: 0;
   padding: 9px 15px;
@@ -239,7 +239,7 @@ body {
 }
 
 h1 {
-  color: #00DD00;
+  color: #00DDDD;
   letter-spacing: -0.5px;
   margin-top: 0;
   margin-bottom: 18px;
@@ -249,7 +249,7 @@ h1 {
 }
 
 h3 {
-  color: #00DD00;
+  color: #00DDDD;
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 32px;
@@ -258,7 +258,7 @@ h3 {
 }
 
 h4 {
-  color: #00DD00;
+  color: #00DDDD;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
@@ -267,7 +267,7 @@ h4 {
 }
 
 p {
-  color: #008800;
+  color: #008888;
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 26px;
@@ -284,7 +284,7 @@ p {
   height: 100%;
   max-width: 280px;
   background-color: #000000;
-  border-right: 1px solid #353535;
+  border-right: 1px solid #AA0000;
   padding: 32px;
 }
 
@@ -298,14 +298,14 @@ p {
 }
 
 .label-white {
-  color: #00DD00;
+  color: #00DDDD;
   margin-bottom: 2px;
   font-size: 16px;
   line-height: 24px;
 }
 
 .label-gray {
-  color: #008800;
+  color: #008888;
   font-size: 14px;
   line-height: 22px;
 }
@@ -318,7 +318,7 @@ p {
 .niv-image {
   width: 48px;
   height: 48px;
-  border: 1px solid #353535;
+  border: 1px solid #AA0000;
   border-radius: 100px;
   margin-right: 12px;
 }
@@ -347,16 +347,16 @@ p {
 
 .lead {
   max-width: 580px;
-  color: #00DD00;
+  color: #00DDDD;
   margin-bottom: 0;
   line-height: 26px;
 }
 
 .button {
-  color: #00DD00;
+  color: #00DDDD;
   background-color: #000000;
-  border: 1px solid #363636;
-  border-right-color: #353535;
+  border: 1px solid #AA0000;
+  border-right-color: #AA0000;
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 14px;
@@ -375,7 +375,7 @@ p {
 }
 
 .mini-label-white {
-  color: #00DD00;
+  color: #00DDDD;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   margin-top: 24px;
@@ -386,7 +386,7 @@ p {
 }
 
 .mini-label-white.gray-color {
-  color: #008800;
+  color: #008888;
 }
 
 .chips-container {
@@ -403,8 +403,9 @@ p {
 }
 
 .single-chip {
-  color: #00DD00;
-  background-color: #353535;
+  color: #00DDDD;
+  background-color: #1a0000;
+  border: 1px solid #AA0000;
   border-radius: 8px;
   padding: 8px 12px;
   font-family: IBM Plex Mono, sans-serif;
@@ -432,13 +433,17 @@ p {
 
 .nav-link-image {
   width: 24px;
-  opacity: 0.48;
+  opacity: 0.7;
+}
+
+.nav-link-container.w--current .nav-link-image {
+  opacity: 1;
 }
 
 .nav-link-container {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  color: #008800;
+  color: #008888;
   text-transform: capitalize;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
@@ -449,10 +454,14 @@ p {
   display: flex;
 }
 
+.nav-link-container:hover {
+  color: #00DDDD;
+}
+
 .nav-link-container.w--current {
-  color: #00DD00;
-  background-color: #2b2b2b;
-  border-color: #353535;
+  color: #00DDDD;
+  background-color: #2a0a0a;
+  border-color: #AA0000;
 }
 
 .projects-container {
@@ -506,7 +515,7 @@ p {
 }
 
 .back-nav-container {
-  color: #00DD00;
+  color: #00DDDD;
   letter-spacing: 2px;
   text-transform: uppercase;
   align-items: center;
@@ -520,7 +529,7 @@ p {
 }
 
 .back-nav-button {
-  color: #00DD00;
+  color: #00DDDD;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 8px;
   margin-top: -12px;
@@ -537,7 +546,7 @@ p {
 }
 
 .project-desc {
-  color: #008800;
+  color: #008888;
   line-height: 24px;
 }
 
@@ -578,7 +587,7 @@ p {
   width: 440px;
   max-width: 100%;
   border-radius: 8px;
-  border: 1px solid #353535;
+  border: 1px solid #AA0000;
   margin: 0;
 }
 
@@ -594,7 +603,7 @@ p {
 
 /* CV page styles */
 .cv-content a {
-  color: #6ab0f3;
+  color: #00DDDD;
   text-decoration: none;
 }
 
@@ -607,7 +616,7 @@ p {
 }
 
 .cv-contact {
-  color: #008800;
+  color: #008888;
   font-size: 14px;
   margin-bottom: 16px;
   display: flex;
@@ -617,12 +626,12 @@ p {
 }
 
 .cv-contact a {
-  color: #6ab0f3;
+  color: #00DDDD;
   text-decoration: none;
 }
 
 .cv-sep {
-  color: #555;
+  color: #AA0000;
 }
 
 .cv-download {
@@ -634,7 +643,7 @@ p {
 }
 
 .cv-section h3 {
-  border-bottom: 1px solid #353535;
+  border-bottom: 1px solid #AA0000;
   padding-bottom: 8px;
   margin-bottom: 24px;
 }
@@ -651,25 +660,25 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  color: #008800;
+  color: #008888;
   font-size: 13px;
   margin-bottom: 12px;
   font-family: IBM Plex Mono, monospace;
 }
 
 .cv-employer {
-  color: #008800;
+  color: #008888;
   font-weight: 500;
 }
 
 .cv-meta span:not(:last-child)::after {
   content: " | ";
-  color: #555;
+  color: #AA0000;
   margin-left: 8px;
 }
 
 .cv-job ul {
-  color: #008800;
+  color: #008888;
   font-size: 14px;
   line-height: 24px;
   padding-left: 20px;
@@ -691,7 +700,7 @@ p {
   max-width: 400px;
   width: 100%;
   border-radius: 8px;
-  border: 1px solid #353535;
+  border: 1px solid #AA0000;
   margin-top: 12px;
 }
 
@@ -728,14 +737,14 @@ p {
   }
 
   .nav-link-container:active {
-    color: #00DD00;
-    background-color: #2b2b2b;
+    color: #00DDDD;
+    background-color: #2a0a0a;
   }
 
   .navbar-icon {
     width: 32px;
     height: 32px;
-    color: #00DD00;
+    color: #00DDDD;
     font-size: 32px;
   }
 

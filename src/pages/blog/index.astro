@@ -56,11 +56,11 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'shor
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.75rem;
       }
       .blog-list-item {
-        border-bottom: 1px solid #2a2d36;
-        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #3a0000;
+        padding-bottom: 1.75rem;
       }
       .blog-list-item:last-child {
         border-bottom: none;
@@ -71,18 +71,26 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'shor
         display: block;
       }
       .blog-list-link h3 {
-        margin: 0 0 0.25rem 0;
-        color: #00DD00;
+        margin: 0 0 0.35rem 0;
+        color: #00DDDD;
+      }
+      .blog-list-link:hover h3 {
+        color: #FF0000;
       }
       .blog-list-link time {
-        color: #888;
+        color: #AA0000;
+        font-family: 'IBM Plex Mono', monospace;
         font-size: 0.9rem;
       }
       .blog-list-link p {
-        margin: 0.5rem 0;
+        margin: 0.6rem 0;
+        color: #008888;
+        font-family: 'IBM Plex Serif', Georgia, serif;
+        font-size: 19px;
+        line-height: 1.6;
       }
       .blog-draft-tag {
-        color: #888;
+        color: #AA0000;
         font-weight: normal;
         font-size: 0.85em;
       }

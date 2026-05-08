@@ -1986,8 +1986,8 @@
 </g>
 <defs>
 <radialGradient id="paint0_radial_2836_38211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1606.5 -38.0273) rotate(103.347) scale(1020.13 1540.23)">
-<stop stop-color="#00DD00"/>
-<stop offset="1" stop-color="#00DD00" stop-opacity="0"/>
+<stop stop-color="#00DDDD"/>
+<stop offset="1" stop-color="#00DDDD" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>

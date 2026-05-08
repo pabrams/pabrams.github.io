@@ -5,7 +5,7 @@ const { title, desc: Desc, tech, image, url } = Astro.props;
 <div class="single-item">
   <div class="project-layout">
     <div class="project-text">
-      <h3>{url ? <a href={url} target="_blank" rel="noopener noreferrer" style="color: #00DD00; text-decoration: none; border-bottom: 1px solid #555;">{title}</a> : title}</h3>
+      <h3>{url ? <a href={url} target="_blank" rel="noopener noreferrer" style="color: #00DDDD; text-decoration: none; border-bottom: 1px solid #555;">{title}</a> : title}</h3>
       <div class="project-desc project-desc-list w-richtext">
         <Desc />
       </div>

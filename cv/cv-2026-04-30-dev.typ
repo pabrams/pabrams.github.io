@@ -86,11 +86,11 @@
       org: "Department of Justice, Canada",
       location: "Ottawa, ON",
       dates: "October 2006 – March 2014",
-      title: "Full-Stack Developer (2010–2014) · Software Development Engineer in Test (2006–2009)",
+      title: "Full-Stack Developer (2009–2014) · Software Development Engineer in Test (2008–2009)",
       intro: [Core contributor to the department's flagship *Legal Case Management System (iCase)* - a distributed enterprise application used by 5,000+ lawyers and agents across Canada to manage sensitive case files, timekeeping, billing, and reporting. Multi-tier with role- and object-based security, integrated with records management, financial, and email systems, 24/7 high availability.],
       subroles: (
         (
-          title: "Full-Stack Developer (2010–2014)",
+          title: "Full-Stack Developer (2009–2014)",
           bullets: (
             [Led development of the *"My iCase" widget portal* - the new entry point to iCase. Gathered requirements directly from business analysts, ran JAD sessions, produced prototypes, and authored BDD/TDD documentation before implementing the application largely solo. Built on ASP.NET Web Parts and the Personalization framework with a *custom SQL personalization provider*, Knockout.js for MVVM, async AJAX web service calls, an async HTTP handler that served images from cached business objects, ReportViewer in remote SSRS mode, and a JavaScript polyfill to make HTML5 work in the department-mandated IE8.],
             [Diagnosed a homepage report that took \~10 seconds uncached: profiled with SQL Profiler, Report Execution logs, and actual execution plans, then replaced live joins with a flat table populated by a nightly job. *\~50× faster uncached, 3–4× faster cached.*],
@@ -100,7 +100,7 @@
           ),
         ),
         (
-          title: "Software Development Engineer in Test (2006–2009)",
+          title: "Software Development Engineer in Test (2008–2009)",
           bullets: (
             [Identified a critical regression-testing bottleneck and voluntarily architected a custom Java-based framework in *IBM Rational Functional Tester (RFT)* that parsed English-language scenario documents and auto-generated executable test scripts. Pivoted from VB.NET to Java on advice from IBM Support.],
             [Replaced the department's *"all-hands" manual regression cycle* (\~20–25 testers running for two weeks every release) with one person reviewing automated results in five days. *\~98% reduction in release validation effort*, eliminated the standing 2-week code freeze per release, *saved an estimated \$160,000 per cycle*.],

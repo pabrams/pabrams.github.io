@@ -89,7 +89,7 @@
       org: "Department of Justice, Canada",
       location: "Ottawa, ON",
       dates: "October 2006 – March 2014",
-      title: "Full-Stack Developer (2010–2014) · Software Development Engineer in Test (2006–2009)",
+      title: "Full-Stack Developer (2009–2014) · Software Development Engineer in Test (2008–2009)",
       intro: [Core contributor to the department's flagship *Legal Case Management System (iCase)* - a distributed enterprise application used by 5,000+ lawyers and agents across Canada. Multi-tier with role- and object-based security, integrated with records management, financial, and email systems, 24/7 high availability across \~11 document servers regionally distributed.],
       bullets: (
         [*Self-initiated availability monitoring suite* for web and document servers. Scheduled tests pinged each server; failures emailed the appropriate operations group. Replaced manual evening / weekend checks by support staff, eliminating significant overtime. (An early SRE-style intervention before the term was widely used.)],

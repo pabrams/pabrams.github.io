@@ -20,7 +20,7 @@ import Sidebar from "../components/Sidebar.astro";
           <div class="content-container cv-content">
             <div class="cv-header">
               <h1>Paul Abrams</h1>
-              <p class="lead">Full-Stack Software Developer | Web Applications, Cloud, Automation | Professional Scrum Master</p>
+              <p class="lead">Senior Full-Stack Developer | Web &amp; Cloud | CI/CD | 15+ Years Government / Enterprise | Professional Scrum Master</p>
               <div class="cv-contact">
                 <span>Toronto, Ontario</span>
                 <span class="cv-sep">|</span>
@@ -31,13 +31,13 @@ import Sidebar from "../components/Sidebar.astro";
                 <a href="https://github.com/pabrams" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               <div class="cv-download">
-                <a href="/assets/CV-Paul-Abrams-2026-04-23.pdf" class="button w-button" target="_blank">Download PDF</a>
+                <a href="/assets/CV-Paul-Abrams-2026-05-21-general.pdf" class="button w-button" target="_blank">Download PDF</a>
               </div>
             </div>
 
             <section class="cv-section">
               <h3>Professional Summary</h3>
-              <p>Over 15 years of progressive experience as a full-stack developer, with strong DevOps and Cloud expertise. Proven track record of modernizing enterprise infrastructure, delivering working software, mitigating technical debt, and designing robust CI/CD pipelines. Highly adaptable technical leader with consistent success driving cross-functional Agile/Scrum teams. Proficient with a broad diversity of full-stack technologies, but most notably C#.NET, JavaScript/TypeScript, React, and SQL Server.</p>
+              <p>Full-stack developer with 15+ years of progressive experience building <strong>web-based B2B and B2C applications in client/server environments</strong>, modernizing legacy systems, and operating CI/CD pipelines at scale across the Government of Canada &mdash; Department of Justice, CIC / IRCC, ESDC (Benefits Delivery Modernization). Recurring pattern: self-initiated automation that pays back substantial labour cost &mdash; an IBM Rational Functional Tester framework that eliminated a 2-week regression cycle (~98% reduction, ~$160K saved per cycle), a self-built availability-monitoring suite that replaced volunteer evening checks, scheduled tooling that closed gaps no off-the-shelf product covered, modernization by deletion (replaced contractor-built UI-driven release apps with PowerShell against REST APIs). Strong on <strong>.NET / C#</strong> server-side (n-tier ASP.NET / ASP.NET MVC / ADO.NET / Entity Framework / LINQ at 5,000+ users; .NET Framework 2.0 / 3.5 / 4.0 / 4.5 / 5.0 and .NET 6/8 across roles), <strong>React + TypeScript</strong> on the front end, and <strong>Microsoft Azure</strong> PaaS (Functions, SQL, APIM, Key Vault, Entra) alongside <strong>Azure DevOps Server (TFS)</strong> installation, configuration, customization, and multi-environment upgrades. Deep Microsoft toolchain: Visual Studio 2005 &rarr; 2022, MS SQL Server 2005 / 2008 / 2008R2 / 2012 / 2016+, IIS 7 / 8 / 10, HTML / CSS / XML / XSLT / JavaScript / jQuery / AJAX, Crystal Reports / SSRS / SSIS, OOP, entity-relationship modelling, FDD/TDD with multi-month work-package-level effort-estimation breakdowns. Comfortable in regulated environments &mdash; ITSG-33 / PBMM, WCAG / AODA, ITIL. Professional Scrum Master I. Active open-source contributor (60+ public PRs).</p>
             </section>
 
             <section class="cv-section">
@@ -51,9 +51,11 @@ import Sidebar from "../components/Sidebar.astro";
                   <span class="cv-dates">August 2025 - Present</span>
                 </div>
                 <ul>
-                  <li>Architect and develop an online multiplayer space trading game. Produced functional design document, technical specifications, and implemented minimum viable product. (Node.js, TypeScript, Express.js, PostgreSQL) &mdash; Demo: <a href="https://twnr.paulabrams.ca" target="_blank" rel="noopener noreferrer">twnr.paulabrams.ca</a></li>
-                  <li>Develop solutions for supervised fine-tuning of Large Language Models (LLM) for large clients such as DataAnnotation.tech; evaluate code generation by applying expert code review combined with comprehensive unit testing. Consistently meet high-pressure deadlines. (JavaScript, TypeScript, .NET (C#), Python, React, SQL, REST, Node.js, MongoDB)</li>
-                  <li>Developed specialized chess training software integrated with Lichess.org API to help visualize board control and checkmating patterns. (React.js, TypeScript, OAuth2, REST) &mdash; Demo: <a href="https://paulabrams.ca/chess-attack-visualization" target="_blank" rel="noopener noreferrer">paulabrams.ca/chess-attack-visualization</a></li>
+                  <li><strong>TWNR</strong> &mdash; architected and shipped a multiplayer trading game as a full-stack web application, solo. Dockerized TypeScript pnpm monorepo: Express + WebSocket server backed by PostgreSQL, terminal-style xterm.js client served by Vite, JWT auth, JSON-Schema-generated REST API contract that doubles as live documentation. Concurrency-correct game state via PostgreSQL transactions. Live at <a href="https://twnr.paulabrams.ca" target="_blank" rel="noopener noreferrer">twnr.paulabrams.ca</a>.</li>
+                  <li><strong>Chess Attack Visualization</strong> &mdash; React + TypeScript training app consuming the Lichess.org REST API. Diagnosed a missing x-ray attacker feature in <code>chess.js</code> via React-lifecycle breakpoint debugging, opened <a href="https://github.com/jhlywa/chess.js/pull/572" target="_blank" rel="noopener noreferrer">upstream PR #572</a>, and published a fork as <code>@pabrams/chess.js</code> on npm. Live at <a href="https://paulabrams.ca/chess-attack-visualization" target="_blank" rel="noopener noreferrer">paulabrams.ca/chess-attack-visualization</a>.</li>
+                  <li><strong>Portfolio site</strong> at <a href="https://paulabrams.ca" target="_blank" rel="noopener noreferrer">paulabrams.ca</a> operated as Astro on GitHub Pages with GitHub Actions CI/CD.</li>
+                  <li><strong>LLM code evaluation</strong> for DataAnnotation.tech and Stellar.ai &mdash; designing prompt fixtures and grading rubrics that probe specific model failure modes across .NET / C#, TypeScript, React, Ruby, Python, Go, Rust, and SQL, including security audits at known-vulnerable revisions with CWE/CVSS-graded inventories, adversarial unit tests, and AI-assistant "skills" evaluated through controlled ablation.</li>
+                  <li><strong>60+ public PRs</strong> to outside repos &mdash; Microsoft's <code>vsts-team-calendar</code> and <code>tfs-cli</code>, the official TypeScript-Website, the Microsoft Authentication Library .NET docs, <code>canada-ca/platform-security</code>, the Dygma split-keyboard configurator, and others.</li>
                 </ul>
               </div>
 
@@ -65,11 +67,13 @@ import Sidebar from "../components/Sidebar.astro";
                   <span class="cv-dates">December 2021 - July 2025</span>
                 </div>
                 <ul>
-                  <li>Enhanced and maintained microservices-architecture application for onboarding personnel; integrated with enterprise IAM in Azure AD and Azure DevOps mirrored in Entra (C# .NET, Blazor, HTML/CSS, Azure Logic Apps, Azure SQL, APIM, GraphQL).</li>
-                  <li>Implemented CI/CD pipelines in ADO for build, test, and cloud deployments. Supported and advised other teams on pipeline implementation and management. (PowerShell, YAML).</li>
-                  <li>Developed custom ADO web extension applications (TypeScript, React) -- analytics widget for build/deploy metrics; Team Calendar leveraging sprint/iteration data.</li>
-                  <li>Administered Azure DevOps Services for all teams in the BDM project; advised on Agile process templates, branching strategies, PR workflows, and WCAG accessibility compliance.</li>
-                  <li>Implemented ITSG-33 (NIST-based) security controls for SA&A submissions against a PBMM security profile.</li>
+                  <li>Enhanced and maintained a <strong>microservices</strong> enterprise onboarding application &mdash; C# / .NET, Blazor, Azure SQL, Azure Functions, GraphQL. Designed and consumed REST APIs between services; integrated with enterprise IAM via Azure AD / Entra (OAuth 2.0, OpenID Connect); published and governed APIs through Azure API Management.</li>
+                  <li><strong>Event-driven workflows</strong> via Azure Functions &mdash; Blazor front-end submissions kicked off Functions that triggered ADO pipelines, applied ADO security and work-item updates, integrated with on-prem Active Directory via AAD Connect, and applied AAD group memberships based on personnel profile.</li>
+                  <li><strong>Migrated downstream identity to Azure Managed Identities</strong> &mdash; replaced rotating Key Vault secrets and ADO Personal Access Tokens (90-day rotation, with all auto-generated ADO work items attributed to one person) with service principals issued at runtime through Entra. Eliminated the secret-rotation incident class and properly attributed automated activity.</li>
+                  <li>Designed and shipped <strong>custom Azure DevOps web extensions</strong> in React / TypeScript / Node.js &mdash; a build/deploy analytics widget rendering success-rate charts via the ADO Builds REST API; a people-by-project reporter using an in-memory hashmap for tractable cross-referencing; a weekly work-item digest emailer driven by scheduled pipelines.</li>
+                  <li>Built <strong>PowerShell tooling</strong> against the Azure DevOps REST API to snapshot area paths, iteration paths, and security configurations on a schedule and commit those snapshots into Git as a <em>configuration-drift detector</em> &mdash; closing a gap no off-the-shelf product covered.</li>
+                  <li><strong>CI/CD pipelines</strong> in Azure DevOps for build, test, Docker containerization, Kubernetes deployment, and Azure Data Factory orchestration. Implemented ITSG-33 (NIST-based) security controls &mdash; TLS / SSL certificate management, secret hygiene via Azure Key Vault &mdash; for SA&amp;A submissions against a PBMM security profile.</li>
+                  <li>Administered <strong>Azure DevOps Services</strong> for all BDM teams; advised on Agile / Scrum / CMMI process templates, branching strategies, PR workflows; connected Power BI to ADO Analytics; ensured WCAG accessibility compliance.</li>
                 </ul>
               </div>
 
@@ -81,9 +85,9 @@ import Sidebar from "../components/Sidebar.astro";
                   <span class="cv-dates">August 2019 - November 2021</span>
                 </div>
                 <ul>
-                  <li>Engineered ADO pipelines for automated testing, provisioning agent machines to execute parallel Selenium UI tests and seamlessly integrating logged test results back into ADO.</li>
-                  <li>Co-architected an internal web application enabling QA staff to author structured test scenarios via a web UI; designed the database schema and developed the C# code bridging the application with ADO.</li>
-                  <li>Championed the departmental transition from LoadRunner to JMeter, significantly reducing licensing costs.</li>
+                  <li>Co-architected an <strong>internal C# / .NET web application</strong> enabling QA staff and business analysts to author structured automated test scenarios via a web UI; designed the SQL Server schema and <strong>co-designed the REST API on the web-app side</strong> enabling bidirectional integration with Azure DevOps pipelines &mdash; script-fetch endpoints (versioned Selenium scripts generated on the fly from SQL) and results-push endpoints for structured test outcomes. Integrated with the departmental headless CMS platform.</li>
+                  <li>Engineered Azure DevOps <strong>CI/CD pipelines for automated testing</strong> &mdash; provisioned Windows agents to execute parallel Selenium UI tests against deployed applications and integrated logged test results back into ADO work items.</li>
+                  <li>Championed the departmental transition from <strong>LoadRunner to JMeter</strong>, reducing licensing costs while maintaining robust performance-testing capabilities.</li>
                 </ul>
               </div>
 
@@ -95,52 +99,57 @@ import Sidebar from "../components/Sidebar.astro";
                   <span class="cv-dates">April 2018 - August 2019</span>
                 </div>
                 <ul>
-                  <li>Directed daily stand-ups and poker planning estimation sessions. Pioneered capacity planning and forecasting methodologies using Azure DevOps Server (TFS).</li>
-                  <li>Mentored full-stack developers in SSRS, T-SQL, C#.NET, and automated testing.</li>
-                  <li>Managed departmental TFS instances and maintained heavily customized Agile, Scrum, and CMMI process templates. Built custom web extensions using React.js, Node.js, TypeScript/JavaScript, and C#.</li>
+                  <li>Led <strong>Agile / Scrum</strong> sprint planning, review, retrospective, daily stand-up, and backlog refinement; pioneered capacity-planning and forecasting using Azure DevOps Server; introduced poker planning estimation across a cross-functional team.</li>
+                  <li>Administered departmental <strong>TFS</strong> instances and maintained heavily customized Agile, Scrum, and CMMI process templates; managed user/group security across multiple project collections.</li>
+                  <li><strong>Mentored developers</strong> in SQL Server query optimization &mdash; query tuning, indexing strategy, partitioned tables, execution-plan analysis &mdash; against large TFS databases and warehouses. Also coached on SSRS and C# / .NET.</li>
+                  <li>Implemented and deployed custom web extensions in <strong>React / TypeScript / Node.js</strong> with responsive layouts and accessibility-aligned interactions.</li>
                 </ul>
               </div>
 
               <div class="cv-job">
-                <h4>Development Lead</h4>
+                <h4>Development Lead &mdash; iCase / Microsoft Dynamics CRM Modernization</h4>
                 <div class="cv-meta">
                   <span class="cv-employer">Department of Justice Canada</span>
                   <span class="cv-location">Ottawa, Ontario</span>
                   <span class="cv-dates">January 2016 - March 2018</span>
                 </div>
                 <ul>
-                  <li>Led enhancement and maintenance of the departmental case management system -- a high availability web application serving thousands of accounts across the country (ASP.Net, C#, SQL, JavaScript, HTML, CSS).</li>
-                  <li>Mentored junior developers and integrated code review processes with TFS work items.</li>
-                  <li>Engineered MS Dynamics CRM plug-ins, custom actions, and processes; migrated legacy SQL stored procedures to the new CRM environment using C# and LINQ.</li>
+                  <li>Dev lead on the <strong>Legal Case Management System (iCase)</strong> &mdash; a large n-tier ASP.NET / C# / ADO.NET / .NET Framework 4 enterprise web application used by 5,000+ lawyers &mdash; while concurrently building its <strong>Microsoft Dynamics CRM</strong> successor. Modified iCase schema and front-end UI to surface migration status to users in real time; adjusted the integration stored procedures (<code>icisp_*</code>) consumed by the department's SAP-based financial information system. Stack also: Visual Studio 2013, MS SQL Server 2008R2 / 2012, IIS 7 / 8.</li>
+                  <li>Engineered <strong>MS Dynamics CRM plug-ins, custom actions, and workflow processes</strong> in C#; rewrote SQL stored procedures as C# with LINQ inside CRM; used SSIS for ETL between iCase and Dynamics. Set up <strong>relationships between system and custom entities</strong>; performed <strong>form customization with JavaScript</strong> on CRM forms; produced <strong>entity-relationship diagrams</strong> and <strong>detailed multi-month effort-estimation breakdowns</strong> (FDD/TDD) prior to implementation. Applied design patterns (Repository, Strategy, Mediator) and clean-code refactoring.</li>
+                  <li>Established code-review processes integrated directly with TFS work items &mdash; gating standards for maintainability, security, and performance &mdash; and mentored junior developers.</li>
                 </ul>
               </div>
 
               <div class="cv-job">
-                <h4>Senior DevOps & ALM Engineer</h4>
+                <h4>Senior Software Engineer &middot; TFS / Release Engineering Lead</h4>
                 <div class="cv-meta">
                   <span class="cv-employer">Department of Citizenship and Immigration Canada</span>
                   <span class="cv-location">Ottawa, Ontario</span>
                   <span class="cv-dates">April 2014 - December 2015</span>
                 </div>
                 <ul>
-                  <li>Transitioned the department from manual, UI-based release procedures to fully automated CI/CD workflows.</li>
-                  <li>Slashed technical debt by replacing over-engineered legacy C# desktop applications with lightweight PowerShell scripts using the TFS Client APIs.</li>
-                  <li>Guided development teams in migrating from legacy XAML builds to modern, scriptable build definitions.</li>
+                  <li>Hired alongside one other engineer to take over a TFS / TFVC release-management environment from a contractor team. <strong>Decommissioned over-engineered legacy C# desktop release-management apps</strong> and replaced them with lightweight PowerShell scripts calling the TFS REST APIs &mdash; net result, most of the contractor tooling was simply deleted. <strong>Everything about the application ended up in source control</strong> &mdash; group memberships, permissions, repository access, process template customizations. Used <strong>XSLT-via-PowerShell</strong> to transform Work Item Template (WIT) XML for automated deployment of custom TFS process templates.</li>
+                  <li><strong>Installed, configured, customized, and upgraded TFS / Azure DevOps Server</strong> across dev / UAT / production environments &mdash; complex multi-step upgrade paths, <strong>Kerberos / SPN configuration</strong> on application tiers without domain-controller access (coordinated with AD admins), database-tier migration, and process-template re-customization post-upgrade.</li>
+                  <li>Maintained a fork of Microsoft's <code>vsts-team-calendar</code> extension with configurable colours, Outlook integration, release-management features, and IE-compatibility shims for the department's mandated browser; contributed back upstream.</li>
+                  <li>Guided development teams in migrating from legacy XAML builds to modern, scriptable build definitions; ran <strong>Waterfall vs Agile</strong> SDLC comparison sessions; wrote runbooks for TFS operation, maintenance, and troubleshooting so the work could be handed off cleanly.</li>
                 </ul>
               </div>
 
               <div class="cv-job">
-                <h4>Full-Stack .NET Developer / SDET</h4>
+                <h4>Full-Stack Developer (2010&ndash;2014) &middot; Software Development Engineer in Test (2006&ndash;2009)</h4>
                 <div class="cv-meta">
                   <span class="cv-employer">Department of Justice Canada</span>
                   <span class="cv-location">Ottawa, Ontario</span>
                   <span class="cv-dates">October 2006 - March 2014</span>
                 </div>
+                <p class="cv-job-intro">Core contributor to the department's flagship <strong>Legal Case Management System (iCase)</strong> &mdash; a distributed multi-tier ASP.NET / C# enterprise <strong>web-based B2B / B2C client/server</strong> application used by 5,000+ government lawyers and contracted agent firms across Canada (agents ran their own businesses and tracked billing and timekeeping inside iCase &mdash; B2B; financial integration also crossed organizational lines within the department). Multi-tier with role- and object-based security, integrated with records management, financial, and email systems, 24/7 high availability. Stack: Visual Studio 2005 / 2008 / 2010, ASP.NET / ADO.NET, .NET Framework 2.0 &rarr; 4.0, MS SQL Server 2005 &rarr; 2008R2 &rarr; 2012, IIS 6 / 7 / 8, HTML / CSS / XML / XSLT / JavaScript / jQuery / AJAX, Crystal Reports &rarr; SSRS.</p>
                 <ul>
-                  <li>Core contributor to the flagship Legal Case Management System used by 5,000+ lawyers and agents across Canada.</li>
-                  <li>Modernized the CMS with a widget-based interface using Knockout.js and ASP.NET, reducing server load.</li>
-                  <li>Diagnosed a COM Interop memory leak across 11 servers and implemented automated health monitoring.</li>
-                  <li>Architected a custom Java-based test framework that reduced release validation time by 98% (80 person-weeks to 5 person-days), saving an estimated $160,000 per release cycle.</li>
+                  <li>Led design and largely solo implementation of the <strong>&ldquo;My iCase&rdquo; widget portal</strong> &mdash; the new entry point to iCase. Ran JAD sessions, produced prototypes, authored BDD/TDD documentation. Built on ASP.NET Web Parts and the Personalization framework with a custom SQL personalization provider, Knockout.js MVVM on the front end, async AJAX, async HTTP handlers, ReportViewer in remote SSRS mode, and an HTML5 polyfill for the department-mandated IE8.</li>
+                  <li>Diagnosed a homepage report taking ~10s uncached: profiled with SQL Profiler, Report Execution logs, and execution plans, then replaced live joins with a flat table populated by a nightly job. <strong>~50&times; faster uncached, 3&ndash;4&times; faster cached.</strong></li>
+                  <li>Built a <strong>self-initiated availability-monitoring suite</strong> for web and document servers (an early SRE-style intervention); eliminated significant overtime and reduced operational risk.</li>
+                  <li>Diagnosed and resolved a <strong>COM Interop memory leak</strong> across the document servers; built automated health monitoring to catch regressions.</li>
+                  <li>Co-led the SQL Server 2005 &rarr; 2012 database upgrade; migrated core business modules from VB.NET to C#; contributed to the Crystal Reports &rarr; SSRS migration including 14 SSRS reports for the Legal Risk Management module.</li>
+                  <li>Voluntarily architected a custom Java-based test framework in <strong>IBM Rational Functional Tester</strong> that parsed English-language scenario documents and auto-generated executable test scripts. Replaced a 2-week, 20&ndash;25-tester all-hands regression cycle with one person in five days. <strong>~98% reduction in release validation effort, ~$160,000 saved per cycle</strong>, eliminated the standing 2-week code freeze per release. Contributed 500+ posts to the IBM Developerworks Automated Functional Testing forums.</li>
                 </ul>
               </div>
             </section>

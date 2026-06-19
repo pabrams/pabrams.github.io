@@ -56,7 +56,7 @@
     (
       org: "Department of Immigration, Refugees, and Citizenship, Canada",
       location: "Ottawa, ON",
-      dates: "April 2018 – August 2019",
+      dates: "August 2017 – August 2019",
       title: "Team Lead / Technical Lead",
       bullets: (
         [Led *Agile / Scrum* sprint planning, review, retrospective, *daily stand-up*, and backlog refinement; pioneered capacity-planning and forecasting using Azure DevOps Server; introduced poker planning estimation across a cross-functional team.],
@@ -68,7 +68,7 @@
     (
       org: "Department of Justice, Canada",
       location: "Ottawa, ON",
-      dates: "January 2016 – March 2018",
+      dates: "December 2015 – August 2017",
       title: "Development Lead — iCase / Microsoft Dynamics CRM Modernization",
       bullets: (
         [Dev lead on the *Legal Case Management System (iCase)* — a large n-tier *ASP.NET / C\# / ADO.NET / .NET Framework 4* enterprise web application used by 5,000+ lawyers — while concurrently building its *Microsoft Dynamics CRM* successor. Modified iCase schema and front-end UI to surface migration status to users in real time, and adjusted the integration stored procedures (`icisp_*`) consumed by the department's SAP-based financial information system. Stack also: *Visual Studio 2013, MS SQL Server 2008R2 / 2012, IIS 7 / 8*.],
@@ -91,7 +91,7 @@
     (
       org: "Department of Justice, Canada",
       location: "Ottawa, ON",
-      dates: "October 2006 – March 2014",
+      dates: "October 2008 – April 2014",
       title: "Full-Stack Developer (2009–2014) · Software Development Engineer in Test (2008–2009)",
       intro: [Core contributor to the department's flagship *Legal Case Management System (iCase)* — a distributed multi-tier *ASP.NET / C\#* enterprise *web-based B2B / B2C client/server* application used by 5,000+ government lawyers and contracted agent firms across Canada (agents ran their own businesses and tracked billing and timekeeping inside iCase — B2B; financial integration also crossed organizational lines within the department). Multi-tier with role- and object-based security, integrated with records management, financial, and email systems, 24/7 high availability across regionally distributed document servers. Stack: *Visual Studio 2005 / 2008 / 2010, ASP.NET / ADO.NET, .NET Framework 2.0 → 4.0, MS SQL Server 2005 → 2008R2 → 2012, IIS 6 / 7 / 8, HTML / CSS / XML / XSLT / JavaScript / jQuery / AJAX, Crystal Reports → SSRS*.],
       subroles: (

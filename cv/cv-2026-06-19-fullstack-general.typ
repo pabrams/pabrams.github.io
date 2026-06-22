@@ -1,7 +1,7 @@
 #import "template.typ": cv
 
 #show: cv.with(
-  location: "Toronto / Kingston, Ontario",
+  location: "Toronto, Ontario",
   tagline: "Senior Full-Stack Developer · TypeScript / React · Node.js / NestJS · .NET / C\\# · PostgreSQL & SQL · Cloud, Docker & CI/CD · 15+ Years Shipping Web Applications",
   contact: (
     "(819) 921-7192",
@@ -16,7 +16,7 @@
   experience: (
     (
       org: "Abrams Software",
-      location: "Kingston / Toronto, Ontario (Remote)",
+      location: "Toronto, Ontario (Remote)",
       dates: "August 2025 – Present",
       title: "Full-Stack Developer · Independent",
       bullets: (

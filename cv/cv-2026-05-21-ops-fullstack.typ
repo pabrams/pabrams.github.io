@@ -15,7 +15,7 @@
   experience: (
     (
       org: "Abrams Software",
-      location: "Kingston / Toronto, Ontario",
+      location: "Toronto, Ontario",
       dates: "August 2025 – Present",
       title: "Full-Stack Developer · Independent",
       bullets: (
